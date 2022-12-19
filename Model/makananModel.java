@@ -55,14 +55,14 @@ public class makananModel {
         
          try {
            if( CONN.createStatement().executeUpdate(delete)>0){
-            System.out.println("Data Berhasil Dihapus");
+            System.out.println("Berhasil Dihapus");
 //                  System.out.println(insert);
            }else{
-               System.out.println("Data Gagal dihapus");
+               System.out.println("Gagal dihapus");
            }     
         } catch (SQLException ex) {
             Logger.getLogger(makananModel.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Data Gagal dihapus");
+            System.out.println("Gagal dihapus");
         }  
     }
 }
