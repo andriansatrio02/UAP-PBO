@@ -11,10 +11,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class DBHelper {
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "";
-    private static final String DB = "kasir_uap";
-    private static final String MYCONN = "jdbc:mysql://localhost/"+DB;
+    private static String USERNAME = "root";
+    private static String PASSWORD = "";
+    private static String DB = "kasir_uap";
+    private static String MYCONN = "jdbc:mysql://localhost/"+DB;
     
     public static Connection getConnection(){
     Connection conn = null;
