@@ -10,10 +10,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import uappbo.*;
 
-/**
- *
- * @author John Wilken
- */
 public class barangModel {
     private final Connection CONN;
     
