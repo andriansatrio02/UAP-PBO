@@ -22,9 +22,9 @@ public class barangModel {
                                                     "','"+brg.getDiskon()+"','"+brg.getExpired()+"','"+brg.getKategori()+"');";
         try {
            if( CONN.createStatement().executeUpdate(insert)>0){
-            System.out.println("Data Berhasil Dimasukkan");
+            System.out.println("Berhasil Dimasukkan");
            }else{
-               System.out.println("Data yang dimasukkan sudah ada");
+               System.out.println("Data sudah ada");
            }     
         } catch (SQLException ex) {
             Logger.getLogger(barangModel.class.getName()).log(Level.SEVERE, null, ex);
