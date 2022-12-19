@@ -13,17 +13,17 @@ import java.util.logging.Logger;
 public class DBHelper {
     private static String USERNAME = "root";
     private static String PASSWORD = "";
-    private static String DB = "kasir_uap";
+    private static String DB = "kasir";
     private static String MYCONN = "jdbc:mysql://localhost/"+DB;
     
     public static Connection getConnection(){
     Connection conn = null;
         try {
             conn = DriverManager.getConnection(MYCONN, USERNAME, PASSWORD);
-            System.out.println("Koneksi Berhasil");
+            System.out.println("connection success");
         } catch (SQLException ex) {
             Logger.getLogger(DBHelper.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Koneksi Gagal");
+            System.out.println("connection failed");
         }
         return conn;
     }
